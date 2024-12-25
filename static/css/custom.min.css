@@ -27,34 +27,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.bg-royalblue {
-  background-color: var(--color-royalblue);
-}
-
-.text-blue {
-  color: var(--color-royalblue);
-}
-
-.btn-blue {
-  background-color: var(--color-royalblue);
-  border: none;
-  color: var(--color-white);
-}
-.btn-blue:hover {
-  background-color: var(--color-darkroyalblue);
-  color: var(--color-white);
-}
-
-.btn-coral {
-  background-color: var(--color-coral);
-  border: none;
-  color: var(--color-white);
-}
-.btn-coral:hover {
-  background-color: var(--color-darkcoral);
-  color: var(--color-white);
-}
-
 .btn:active {
   transform: scale(0.97);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -62,4 +34,14 @@ body {
 
 .min-h{
   min-height: 90vh;
+}
+
+.nav-link:hover {
+  transition: color 0.3s ease; 
+  transform: scaleX(1.05);
+  font-weight:600;
+}
+
+.logo {
+  pointer-events: none;
 }
