@@ -1,12 +1,32 @@
 <footer class="bg-dark text-white text-center py-4 mt-0 text-head">
-    <p class="text-center mb-1 fs-5">Developed by <a class="no-line fw-semibold text-white" href="#">Rahulkumar Gupta</a></p>
-    <div>
-        <a href="https://www.linkedin.com/in/grahulkumar/">
-            <img src="https://img.icons8.com/ios-filled/40/000000/linkedin.png"/>
-          </a>
-        <a href="https://github.com/grahulkumar">
-            <img src="https://img.icons8.com/ios-filled/40/000000/github.png"/>
-        </a>
-    </div>
-    <p class="text-center mt-4 fs-5">&copy; 2024 RentHome. All rights reserved.</p>
+  {% load static %}
+  <p class="text-center mb-1 fs-5">
+    Developed by <br />
+    <strong class="text-light">Rahulkumar Gupta</strong>
+  </p>
+  <div class="my-3 text-white">
+    <a
+      href="https://www.linkedin.com/in/rahulkumar-fullstack"
+      class="mx-2"
+      title="LinkedIn"
+      aria-label="LinkedIn"
+    >
+      <img src="{% static "images/linkedin_logo.png" %}" width="50vw"  />
+    </a>
+    <a
+      href="https://github.com/rahulkumar-fullstack"
+      class="mx-2"
+      title="GitHub"
+      aria-label="GitHub"
+    >
+      <img src="{% static "images/github_logo.png" %}" width="50vw"  />
+    </a>
+  </div>
+  <div class="my-4">
+    <a href="{% url 'privacy' %}" class="text-white mx-2">Privacy Policy</a>
+    <a href="{% url 'terms' %}" class="text-white mx-2">Terms of Service</a>
+  </div>
+  <p class="mt-3">&copy; 2024, Rent Home. All rights reserved.</p>
+  <a href="#" class="btn btn-light text-dark mt-3" id="back-to-top">Back to Top</a>
+  
 </footer>
