@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+<!--Page title-->
+{% block title %} Contact Us{% endblock title %}
+
+{% load static %}
+{% block custom_css %} 
+<link href="{% static "info_docs/css/contact_detail.css" %}" rel="stylesheet">
+{% endblock custom_css %}
+
+{% block body %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center mb-4">Contact Us</h1>
+            <div class="card-deck">
+                <div class="card mb-4" data-aos="fade-up">
+                    <div class="card-body">
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text">You can reach us at support@renthome.com [note: invalid email id]</p>
+                    </div>
+                </div>
+                <div class="card mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body">
+                        <h5 class="card-title">Phone</h5>
+                        <p class="card-text">Call us at +91 00000 00000 [note: invalid phone number]</p>
+                    </div>
+                </div>
+                <div class="card mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Address</h5>
+                        <p class="card-text">123 Main Street, Mumbai, India</p>
+                    </div>
+                </div>
+                <div class="card mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Support Hours</h5>
+                        <p class="card-text">Our support team is available from 9 AM to 5 PM, Monday to Friday.</p>
+                    </div>
+                </div>
+                <div class="card mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Media</h5>
+                        <p class="card-text">Follow us on Twitter, Facebook, and Instagram for updates.</p>
+                        <p class="text-center">ID: @RentHome</p>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

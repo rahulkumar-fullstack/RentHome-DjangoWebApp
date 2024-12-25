@@ -11,7 +11,7 @@
 
         <div class="shadow-sm rounded-3 bg-white border border-2 p-2 p-md-3">
 
-            <h1 class="text-center my-4 fs-2 fw-bold text-primary text-head">Login to RentSahay</h1>
+            <h1 class="text-center my-4 fs-2 fw-bold text-primary text-head">Login to RentHome</h1>
 
             <!--Success message if user account created-->
             {% if success %}
@@ -52,10 +52,18 @@
                     <button type="submit" id="submit" class="btn btn-primary w-100 fs-5 text-head">Login</button>
                 </div>
             </form>
-            <div class="text-center mb-3">
+            <div class="text-center mb-2">
                 Don't have account?
                 <a href="{% url 'user-type' %}" class="fw-semibold no-line">Register now</a>
             </div>
+            <div class="text-center mb-2">
+                <a href="/" class="fw-semibold no-line">Go to Home</a>
+            </div>
+        </div>
+
+        <div class="text-center py-1">
+            <a href="{% url 'privacy' %}">Privacy</a> <span> | </spam>
+            <a href="{% url 'terms' %}">Terms</a>
         </div>
     </div>
 </div>

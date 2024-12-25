@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+<!--Page title-->
+{% block title %} About Us{% endblock title %}
+
+{% load static %}
+{% block custom_css %} 
+<link href="{% static "info_docs/css/about_us.css" %}" rel="stylesheet">
+{% endblock custom_css %}
+
+{% block body %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center mb-4">About Us</h1>
+            <div class="card-deck">
+                <div class="card mb-4" data-aos="fade-up">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Mission</h5>
+                        <p class="card-text">Our mission is to provide the best rental services in the industry.</p>
+                    </div>
+                </div>
+                <div class="card mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Vision</h5>
+                        <p class="card-text">We envision a world where everyone has access to affordable and quality rental homes.</p>
+                    </div>
+                </div>
+                <div class="card mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Values</h5>
+                        <p class="card-text">We value integrity, customer satisfaction, and innovation.</p>
+                    </div>
+                </div>
+                <div class="card mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Our History</h5>
+                        <p class="card-text">Founded in 2024, we have been serving the community with dedication and excellence.</p>
+                    </div>
+                </div>
+                <div class="card mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Team</h5>
+                        <p class="card-text">Our team consists of experienced professionals dedicated to helping you find the perfect rental home.</p>
+                    </div>
+                </div>
+                <div class="card mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Services</h5>
+                        <p class="card-text">We offer a seamless rental experience with secure Stripe payments and reliable email notifications.</p>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
