@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'owners',
     'users',
     'email_services',
+    'info_doc'
 ]
 
 MIDDLEWARE = [
